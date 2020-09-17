@@ -42,7 +42,6 @@
 
 .pb-0 {
   padding-bottom: 0 !important;
-
 }
 
 .pb-15 {
@@ -56,7 +55,7 @@
 .pt-15 {
   padding-top: px(130) !important;
 
-  @include media("<tablet") {
+  @include media("<=tablet") {
     padding-top: px(50) !important;
   }
 }
@@ -64,7 +63,7 @@
 .ml-6 {
   margin-left: px(60);
 
-  @include media("<tablet") {
+  @include media("<=tablet") {
     margin-left: 0px;
   }
 }
