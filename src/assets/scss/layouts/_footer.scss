@@ -1,0 +1,8 @@
+.footer {
+  background-color: $text-default;
+  padding: 60px;
+
+  @include media("<tablet") {
+    padding: px(16);
+  }
+}

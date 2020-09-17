@@ -1,0 +1,37 @@
+.heading {
+  font-size: px(54);
+  font-weight: $font-light;
+  color: #1a3546;
+
+  @include media("<tablet") {
+    font-size: px(40);
+  }
+}
+
+.heading--small {
+  font-size: px(20);
+  line-height: 27px;
+  font-weight: 300;
+  color: #1a35468c;
+}
+
+.group-text {
+  max-width: 550px;
+}
+
+.caption {
+  color: $text-white;
+  margin: -4px 0 9px;
+  line-height: 28px;
+  font-weight: $font-regular;
+}
+
+.text--small {
+  font-size: px(14);
+  font-weight: 400;
+  text-decoration: none;
+  line-height: 16px;
+  margin: 0 0 14px;
+  display: block;
+  color: #ffffff80;
+}

@@ -1,0 +1,94 @@
+// text align
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-gray {
+  color: $text-gray !important;
+}
+
+.justify-content-between {
+  justify-content: space-between !important;
+}
+
+.align-items-center {
+  align-items: center !important;
+}
+
+.mx-auto {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.p-0 {
+  padding: 0 !important;
+
+  @include media("<tablet") {
+    padding: px(8) !important;
+  }
+}
+
+.pt-0 {
+  padding-top: 0 !important;
+}
+
+.pb-0 {
+  padding-bottom: 0 !important;
+
+}
+
+.pb-15 {
+  padding-bottom: px(150);
+
+  @include media("<tablet") {
+    padding-bottom: 0px;
+  }
+}
+
+.pt-15 {
+  padding-top: px(130) !important;
+
+  @include media("<tablet") {
+    padding-top: px(50) !important;
+  }
+}
+
+.ml-6 {
+  margin-left: px(60);
+
+  @include media("<tablet") {
+    margin-left: 0px;
+  }
+}
+
+.mb-2 {
+  margin-bottom: px(20);
+}
+
+.mb-5 {
+  margin-bottom: px(45);
+
+  @include media("<tablet") {
+    margin-bottom: px(20);
+  }
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.text-white {
+  color: $text-white !important;
+}
+
+.d-inline-block {
+  display: inline-block !important;
+}

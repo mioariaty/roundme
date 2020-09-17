@@ -1,0 +1,78 @@
+.navbar {
+  max-width: 1360px;
+  margin: 0 auto;
+
+  a {
+    color: hsla(0, 0%, 100%, .5);
+    text-decoration: none;
+
+  }
+}
+
+.nav__list {
+  text-align: center;
+  width: 100%;
+  vertical-align: top;
+  list-style: none;
+
+  @include flex(center, center, wrap);
+
+  @include media("<tablet") {
+    flex-direction: column;
+  }
+}
+
+.nav__item a {
+  font-size: px(14);
+  line-height: px(16);
+  font-weight: 600;
+
+  padding: 22px 9px 19px;
+  height: 100%;
+  display: block;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: color .2s linear;
+}
+
+.navbar-collapse {
+  @include media("<tablet") {
+    background-color: $text-default;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: px(16) !important;
+    transform: translateX(0);
+    height: 100vh;
+    width: 80vw !important;
+  }
+}
+
+.navbar-collapse.hidden {
+  transform: translateX(100%);
+}
+
+.navbar__toggler {
+  border: unset;
+  background-color: transparent;
+  padding: 0;
+  line-height: 1;
+  outline: none;
+  cursor: pointer;
+  color: #fff;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10px;
+
+  @include media(">tablet") {
+    display: none;
+  }
+}

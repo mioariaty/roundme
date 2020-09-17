@@ -1,0 +1,19 @@
+.header {
+  position: fixed;
+  width: 100%;
+  transition: all 0.5s ease;
+  z-index: 10;
+
+  @include media("<tablet") {
+    padding: px(10);
+    background-color: $text-default;
+  }
+
+  a {
+    font-size: px(14);
+  }
+}
+
+.is-fixed {
+  background-color: $text-default;
+}

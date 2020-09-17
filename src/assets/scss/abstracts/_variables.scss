@@ -1,0 +1,75 @@
+// color pallete
+$primary-color: #238cce;
+$success-color: #48de57;
+$danger-color: #fd9b9b;
+$info-color: #45ccdb;
+
+//
+$dark-pink: #f16bac;
+$dark-purple: #b06bf1;
+
+$light-blue: #e7effb;
+$light-green: #20e5a7;
+$light-orange: #fcf3ec;
+$light-purple: #f5ecfd;
+$light-red: #fbe9e9;
+$light-sky: #e7faf9;
+
+// text
+$text-gray: #1a3546;
+$text-default: #202020;
+$text-black: #4f4b65;
+$text-white: #fff;
+
+// category bg-color
+$bg-cate: #5e68f9;
+
+// wrapper size
+$wrapper: 1440px;
+
+// border table color
+$border-color: #dee2e6;
+
+// fontweight
+$font-light: 300;
+$font-regular: 400;
+$font-medium: 500;
+$font-semibold: 600;
+$font-bold: 700;
+
+// Breakpoints
+$breakpoints: ("phone": 320px,
+  "tablet": 768px,
+  "desktop": 1024px,
+);
+
+/*
+  GRID SYSTEM VARIABLES
+*/
+
+// desktop grid
+$grid-desktop-columns: 12;
+$grid-desktop-sideMargin: 80px;
+$grid-desktop-gutter: 30px;
+$grid-desktop-breakpoint: 1440px;
+
+// tablet grid
+$grid-tablet-columns: 12;
+$grid-tablet-sideMargin: 60px;
+$grid-tablet-gutter: 20px;
+$grid-tablet-breakpoint: 1020px;
+
+// mobile grid
+$grid-mobile-columns: 12;
+$grid-mobile-sideMargin: 30px;
+$grid-mobile-gutter: 10px;
+$grid-mobile-breakpoint: 767px;
+
+// pixels to % variables
+$desk-grid-width: 100% - (($grid-desktop-sideMargin * 2 / $grid-desktop-breakpoint) * 100%);
+$tab-grid-width: 100% - (($grid-tablet-sideMargin * 2 / $grid-tablet-breakpoint) * 100%);
+$mob-grid-width: 100% - (($grid-mobile-sideMargin * 2 / $grid-mobile-breakpoint) * 100%);
+
+$desk-gutter: (($grid-desktop-gutter / ($grid-desktop-breakpoint - ($grid-desktop-sideMargin * 2))) * 100%);
+$tab-gutter: (($grid-tablet-gutter / ($grid-tablet-breakpoint - ($grid-tablet-sideMargin * 2))) * 100%);
+$mob-gutter: (($grid-mobile-gutter / ($grid-mobile-breakpoint - ($grid-mobile-sideMargin * 2))) * 100%);
